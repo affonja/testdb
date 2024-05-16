@@ -5,7 +5,7 @@ $DBURL = '';
 
 $conStr = sprintf(
     "pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s",
-    'dpg-cp2i1nfsc6pc73a6998g-a', //host
+    'dpg-cp2i1nfsc6pc73a6998g-a.oregon-postgres.render.com', //host
     5432, //port
     'basepr3', //base
     'aff', //user
@@ -13,5 +13,6 @@ $conStr = sprintf(
 );
 
 $pdo = new \PDO($conStr);
+echo 'ok';
 
 
