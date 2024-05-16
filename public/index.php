@@ -15,7 +15,7 @@ $conStr = sprintf(
 $pdo = new \PDO($conStr);
 $sql = 'CREATE TABLE IF NOT EXISTS urls (
                 id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-                name varchar(255) UNIQUE NOT NULL
+                name varchar(255) NOT NULL
                                 );';
 $pdo->exec($sql);
 
