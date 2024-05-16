@@ -20,7 +20,7 @@ $sql = 'CREATE TABLE IF NOT EXISTS urls (
 $pdo->exec($sql);
 
 $sql = "insert into urls(name) VALUES ('ya.ru')";
-$this->pdo->exec($sql);
+$pdo->exec($sql);
 
 $sql = "select * from urls";
 $rows = $pdo->query($sql)->fetchAll(\PDO::FETCH_ASSOC);
